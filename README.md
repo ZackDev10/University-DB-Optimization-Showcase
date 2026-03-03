@@ -20,11 +20,16 @@ By partitioning the `grades` table by year, the query planner utilizes partition
 
 | Before Partitioning (Full Table Scan) | After Partitioning (Partition Pruning) |
 | :---: | :---: |
-| ![Before Partitioning](assets/before_partitioning.png) | ![After Partitioning](assets/after_partitioning.png) |
+| ![Before Partitioning](<img width="963" height="368" alt="before_partitioning" src="https://github.com/user-attachments/assets/1f81f37e-ad38-47c2-bd3d-6c6b1c894941" />
+) | ![After Partitioning](<img width="1166" height="420" alt="after_partitioning" src="https://github.com/user-attachments/assets/d3326743-a985-444c-a707-7f53607e33ad" />
+) |
 
 ### 2. Materialized Views: Department Statistics
 Complex, multi-table aggregations were converted into materialized views, shifting the processing load from on-the-fly calculation to instant, pre-computed reads.
 
 | Before Materialized View (Heavy Joins) | After Materialized View (Instant Read) |
 | :---: | :---: |
-| ![Before MV](assets/before_mv1.png)(assets/before_mv2.png)  | ![After MV](assets/after_mv.png) |
+| ![Before MV](<img width="690" height="896" alt="before_mv1" src="https://github.com/user-attachments/assets/9596daf4-dd99-4118-8130-f519c545d1ce" />
+)(<img width="642" height="263" alt="before_mv2" src="https://github.com/user-attachments/assets/625017f4-472e-49d5-8863-ac10991144f2" />
+)  | ![After MV](<img width="983" height="250" alt="after_mv" src="https://github.com/user-attachments/assets/2f300d86-e597-4430-a510-95afeb23e8cb" />
+) |
