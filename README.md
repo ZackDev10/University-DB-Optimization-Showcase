@@ -1,6 +1,6 @@
-# Argan DB Optimization & Speed Up
+# University DB Optimization & Speed Up
 
-This project modularizes and optimizes the `argan` university database, focusing on schema scalability, query performance, and efficient data generation.
+This project modularizes and optimizes the `university` university database, focusing on schema scalability, query performance, and efficient data generation.
 
 ## Project Structure
 * `sql/01_schema_setup.sql`: Base tables and ENUM types.
